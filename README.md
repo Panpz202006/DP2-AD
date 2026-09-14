@@ -1,6 +1,16 @@
-# Pytorch implementation of AF-CLIP
+# Pytorch implementation of AF-CLIP-DP
 
 Pytorch implementation of Paper "AF-CLIP: Zero-Shot Anomaly Detection via Anomaly-Focused CLIP Adaptation"
+
+## Installation
+
+```bash
+apt-get update && apt-get install -y libgl1 libglib2.0-0 && \
+python -m pip install torchaudio tqdm einops scikit-learn ftfy regex pandas scikit-image opencv-python matplotlib seaborn \
+  -i https://pypi.tuna.tsinghua.edu.cn/simple --no-cache-dir && \
+python -m pip install --force-reinstall "setuptools<81" \
+  -i https://pypi.tuna.tsinghua.edu.cn/simple --no-cache-dir
+```
 
 ![](./pic/model.png)
 
